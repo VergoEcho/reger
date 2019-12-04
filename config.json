@@ -1,0 +1,26 @@
+{
+    "db": {
+        "host": "localhost",
+        "port": "27017",
+        "name": "floz",
+        "user": "",
+        "password": ""
+    },
+    "http": {
+        "port": 3000,
+        "host": "localhost",
+        "publicRoot": "public"
+    },
+    "mail": {
+        "subject": "message from floz",
+        "smtp": {
+            "host": "smtp.gmail.com",
+            "port": 465,
+            "secure": true,
+            "auth": {
+                "user": "flozparfums@gmail.com",
+                "pass": "floz5775"
+            }
+        }
+    }
+}
