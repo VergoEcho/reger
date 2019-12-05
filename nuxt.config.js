@@ -42,18 +42,29 @@ module.exports = {
   */
   buildModules: [
   ],
+  server: {
+    port: 3000,
+    host: '77.123.130.156'
+  },
   /*
   ** Nuxt.js modules
   */
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
+    '@nuxtjs/proxy'
   ],
   /*
   ** Axios module configuration
   ** See https://axios.nuxtjs.org/options
   */
+  proxy: {
+    '/api': process.env.API_URL || 'http://77.123.130.156:3000'
+  },
+
   axios: {
+    proxy: true, 
+    baseURL: "http://77.123.130.156:3000"
   },
   /*
   ** Build configuration
