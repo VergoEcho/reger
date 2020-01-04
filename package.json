@@ -4,7 +4,7 @@
   "description": "parfums sellary",
   "author": "vergo",
   "private": true,
-  "proxy" : "http://77.123.130.156",
+  "proxy": "http://77.123.130.156",
   "scripts": {
     "dev": "cross-env NODE_ENV=development nodemon server/index.js --watch server",
     "build": "nuxt build",

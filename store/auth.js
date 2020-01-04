@@ -18,7 +18,7 @@ export const mutations = {
 export const actions = {
   async login({ commit, dispatch }, formData) {
     try {
-      const {token} = await this.$axios.$post('/api/auth/admin/login', formData)
+      const {token} = await this.$axios.$post('http://77.123.130.156:3000/api/auth/admin/login', formData)
       dispatch('setToken', token)
     } catch (e) {
       commit('setError', e, { root: true })
@@ -27,7 +27,7 @@ export const actions = {
   },
   async createUser({commit}, formData) {
     try {
-      await this.$axios.$post('/api/auth/admin/create', formData)
+      await this.$axios.$post('http://77.123.130.156:3000/api/auth/admin/create', formData)
     } catch (e) {
       commit('setError', e, { root: true })
       throw e
@@ -35,7 +35,7 @@ export const actions = {
   },
   async register({commit}, formData) {
     try {
-      await this.$axios.$post('/api/auth/register', formData)
+      await this.$axios.$post('http://77.123.130.156:3000/api/auth/register', formData)
     } catch (e) {
       commit('setError', e, { root: true })
       throw e

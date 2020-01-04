@@ -102,7 +102,7 @@ export default {
       loading: false,
       controls: {
         name: '',
-        text: '',
+        text: '<a href="">Отзывы</a>',
         price: '',
         maxValue: '',
         sex: '',
